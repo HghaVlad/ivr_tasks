@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Проверка функционала сайтов</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+	<header>
+		<h1>Проверка функционала сайтов</h1>
+		<nav>
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="/task_checker">Отправить ссылку</a></li>
+			</ul>
+			<br>
+		</nav>
+	</header>
+	<main>
+		<h2>Описание сайта</h2>
+		<p>Сайт создан для курса по Backend разработке. Он позволяет автоматически проверять функционал сайтов, которые были написаны в качестве практических работ. После успешной проверки, вы получите флаг, который можно вставить в stepik и засчитать как выполненное задание.</p>
+		 <h2 ><a  href="/task_checker" style="color: black">Отправить ссылку</a></h2>
+	</main>
+
+</body>
+</html>

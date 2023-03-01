@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ошибка</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+	<header>
+		<h1>Проверка функционала сайтов</h1>
+		<nav>
+			<ul>
+				<li><a href="/">Главная</a></li>
+				<li><a href="/task_checker">Отправить ссылку</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>Ошибка</h2>
+		<p>Ваш сайт не прошел тестирование.</p>
+		<p>Пожалуйста, проверьте следующие пункты:</p>
+		<ul>
+			{% for name, res in res_tests %}
+			{% if res == "True" %}
+			<li>{{ name }} - ✅ </li><br>
+			{% else %}
+			<li>{{ name }} - ❌ </li><br>
+			{% endif %}
+			{% endfor %}
+		</ul>
+	</main>
+</body>
+</html>

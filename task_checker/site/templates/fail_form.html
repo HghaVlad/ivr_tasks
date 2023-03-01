@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ошибка: форма заполнена некорректно</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Мой сайт</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/task_checker">Отправить ссылку</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Ошибка: форма заполнена некорректно</h2>
+    <p>Пожалуйста, заполните все поля формы.</p>
+    <p>{{ error }}</p>
+    <a href="" onclick="history.back();">Назад к форме</a>
+  </main>
+</body>
+</html>

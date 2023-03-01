@@ -19,6 +19,7 @@
 &emsp;`file.write(word1 + "-" + word2)`
 - Для чтения файла используйте конструкцию read
 `file = open("file", "r").read()`
+
 <br>Подробнее в файле [запись и чтение](Task1/file_work.py)
 
 
