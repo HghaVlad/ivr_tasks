@@ -21,7 +21,7 @@
 		<p>Пожалуйста, проверьте следующие пункты:</p>
 		<ul>
 			{% for name, res in res_tests %}
-			{% if res == "True" %}
+			{% if res == True %}
 			<li>{{ name }} - ✅ </li><br>
 			{% else %}
 			<li>{{ name }} - ❌ </li><br>

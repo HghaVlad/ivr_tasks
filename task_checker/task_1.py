@@ -1,7 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
+import random
 
 example_link = "http://127.0.0.1:8000/"
+random_words = ["apple", "orign", "man", "world", "ocean", "ground", "ab", "hell", "english", "russia", "pen", "home"]
 
 
 def main_page(link):
@@ -29,33 +31,38 @@ def word_list_page(link):
     try:
         page = BeautifulSoup(requests.get(link + "words_list").text, "lxml")
         tds = page.find("table", "words_list").find_all("td")
-        add_new_word("orange", "апельсин", link)  # Add some words
+        word1 = random.choice(random_words)
+        word2 = random.choice(random_words)
+        add_new_word(word1, word2, link)  # Add some words
         page2 = BeautifulSoup(requests.get(link + "words_list").text, "lxml")
         tds2 = page2.find("table", "words_list").find_all("td")  # Get updates
         if len(tds) == len(tds2):
             return False
-        a = "orange"  # Check having this word
+        a = word1
         for td in tds2:
-            if td.string == "orange":
-                a = "апельсин"
+            if td.string == word1:
+                a = word2
             elif td.string == a:
                 break
         else:
-            print("orange ")
+            print(word1, word2)
             return False
-        add_new_word("man", "бежать", link)  # Add some words again
+        word1 = random.choice(random_words)
+        word2 = random.choice(random_words)
+        add_new_word(word1, word2, link)  # Add some words again
         page3 = BeautifulSoup(requests.get(link + "words_list").text, "lxml")
         table3 = page3.find("table", "words_list")
         tds3 = table3.find_all("td")
         if len(tds2) == len(tds3):
             return False
-        a = "man"
+        a = word1
         for td in tds3:
-            if td.string == "man":
-                a = "бежать"
+            if td.string == word1:
+                a = word2
             elif td.string == a:
                 break
         else:
+            print(word1, word2)
             return False
     except Exception as e:
         print(e)
