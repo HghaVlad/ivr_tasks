@@ -48,23 +48,23 @@
 
 <p>Создайте пустой репозиторий, октройте данную папку в командной строке. Введем команду <code>django-admin startproject &lt;название проекта&gt;</code></p>
 
-<p><img alt="" height="229" name="image.png" src="https://ucarecdn.com/69404b4d-652b-4dc7-bae2-3ed582420a92/" width="993"></p>
+<p><img alt="" name="image.png" src="https://ucarecdn.com/69404b4d-652b-4dc7-bae2-3ed582420a92/" width="993"></p>
 
 <p>У нас появится папка с проектом. Перейдем в эту папку. Django проекты состоят из приложений. Для того, чтобы создать приложение необходимо ввести команду <code>django-admin startapp &lt;название приложения&gt;</code></p>
 
-<p><img alt="" height="96" name="image.png" src="https://ucarecdn.com/1ecd285f-67c3-4ac2-9266-53c9adb9dd14/" width="980"></p>
+<p><img alt="" name="image.png" src="https://ucarecdn.com/1ecd285f-67c3-4ac2-9266-53c9adb9dd14/" width="980"></p>
 
 <p>Иерархия нашего проекта сейчас выглядит примерно так</p>
 
-<p><img alt="" height="410" name="image.png" src="https://ucarecdn.com/adf942c1-01b0-435b-b3c9-227580fabe6b/" width="456"></p>
+<p><img alt="" name="image.png" src="https://ucarecdn.com/adf942c1-01b0-435b-b3c9-227580fabe6b/" width="456"></p>
 
 <p>Подробнее о каждом файле мы познакомимся входе курса. Главным файлом, позволяющий запускать наш проект и применять некоторые команды, является manage.py. Чтобы узнать все команды можно ввести python manage.py <br>
 Для запуска проекта используется команда <samp><code>python manage.py runserver</code></samp></p>
 
-<p><img alt="" height="321" name="image.png" src="https://ucarecdn.com/a34abbcd-d8ec-4f2b-b1ab-4a39bb713a6d/" width="1519"></p>
+<p><img alt="" name="image.png" src="https://ucarecdn.com/a34abbcd-d8ec-4f2b-b1ab-4a39bb713a6d/" width="1519"></p>
 
 <p>По умолчанию сайт доступен по адресу 127.0.0.1:8000<br>
-<img alt="" height="1078" name="image.png" src="https://ucarecdn.com/2a8de30a-388a-4e5c-b4c0-192626c09be5/" width="1361"></p>
+<img alt="" name="image.png" src="https://ucarecdn.com/2a8de30a-388a-4e5c-b4c0-192626c09be5/" width="1361"></p>
 
 ## STEP 4
 
@@ -80,3 +80,7 @@
 - https://www.djangoproject.com/
 - http://127.0.0.1:8000/ ✅
 - 127.0.0.1:8080
+
+
+### [Prev lesson](/book/module_1/lesson_1.md)
+### [Next lesson](/book/module_1/lesson_3.md)

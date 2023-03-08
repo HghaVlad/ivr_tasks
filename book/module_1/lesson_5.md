@@ -55,3 +55,6 @@ pass
 - path
 
 # TO BE CONTINUED
+
+
+### [Prev lesson](/book/module_1/lesson_4.md)

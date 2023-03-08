@@ -134,3 +134,6 @@ def upload_file(request):
 - FILES
 - POST
 - data
+
+
+### [Prev lesson](/book/module_1/lesson_3.md)

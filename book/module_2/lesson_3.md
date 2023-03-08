@@ -476,3 +476,7 @@ def clr_text(context, text):
 <p>Как надо называть переменную объекта <code>Library()</code>?</p>
 
 - register
+
+
+### [Prev lesson](/book/module_1/lesson_2.md)
+### [Next lesson](/book/module_1/lesson_4.md)

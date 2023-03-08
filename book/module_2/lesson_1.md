@@ -187,3 +187,6 @@ def hello(request):
 <p>В какой папке хранятся все шаблоны?</p>
 
 - templates
+
+
+### [Next lesson](/book/module_1/lesson_2.md)

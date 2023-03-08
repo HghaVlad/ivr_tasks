@@ -38,7 +38,7 @@ Urls.py - это то, что в платформе Django известно ка
 
 <p><strong>Архитектура Django</strong></p>
 
-<p style="text-align: center;"><img alt="" height="800" name="image.png" src="https://ucarecdn.com/41545875-4deb-43a6-92ff-914a91c27464/" width="518"></p>
+<p style="text-align: center;"><img alt="" name="image.png" src="https://ucarecdn.com/41545875-4deb-43a6-92ff-914a91c27464/" width="518"></p>
 
 <p>Схема выше отображает картину взаимодействия пользователя с сервером. <br>
 Поступающие от пользователя HTTP запросы передаются Django, который принимает их на промежуточном уровне обработки запросов(Middleware). После этого происходит анализ URL, благодаря которому запросы отправляются к нужным представлениям. Представления выполняют основную часть работу, иногда вызывают модели. После сформирования ответа, с использованием шаблонов отправляется ответ пользователю. </p>
@@ -346,3 +346,7 @@ if settings.DEBUG:
 - LOGGERS
 - TEMPLATES
 - LOGGING
+
+
+### [Prev lesson](/book/module_1/lesson_2.md)
+### [Next lesson](/book/module_1/lesson_4.md)

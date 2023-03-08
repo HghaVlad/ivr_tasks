@@ -237,3 +237,7 @@ urlpatters = [
 
 - ДА ✅
 - НЕТ
+
+
+### [Prev lesson](/book/module_1/lesson_1.md)
+### [Next lesson](/book/module_1/lesson_3.md)

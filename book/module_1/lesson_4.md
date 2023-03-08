@@ -30,7 +30,7 @@
 
 <p> </p>
 
-<p style="text-align: center;"><img alt="" height="500" name="image.png" src="https://ucarecdn.com/2851e549-417f-4da0-9329-85fd6d75be13/" width="800"></p>
+<p style="text-align: center;"><img alt="" name="image.png" src="https://ucarecdn.com/2851e549-417f-4da0-9329-85fd6d75be13/" width="800"></p>
 
 <h3><strong>Рассмотрим примеры:</strong></h3>
 
@@ -317,3 +317,7 @@ urlpatterns = [
 ]</code></pre>
 
 - path("see_author/?name=<author_name:str>/", views.see_author, name="see_author")
+
+
+### [Prev lesson](/book/module_1/lesson_3.md)
+### [Next lesson](/book/module_1/lesson_5.md)
